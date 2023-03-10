@@ -1,0 +1,40 @@
+{{define "form"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Message</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Buat Postingan Baru</h1>
+        <form method="post" action="/show-message">
+            <label>Title :</label>
+            <input type="text" name="title" required />
+            <br />
+            <br>
+
+            <label class="form-label">Deskripsi :</label>
+            <br>
+            <textarea name="message" required ></textarea>
+            <br />
+            <br>
+            
+            <button type="submmit">Simpan</button>
+        </form>
+    </body>
+</html>
+{{end}}
+
+{{define "result"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show Message</title>
+    </head>
+    <body>
+        <h1>{{.title}}</h1>
+        <p>{{.message}}</p>
+    </body>
+</html>
+{{end}}
+

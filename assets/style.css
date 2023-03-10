@@ -1,0 +1,30 @@
+body{
+    padding-left: 30px;
+}
+
+textarea{
+    width: 450px;
+    height: 300px;
+    display: block;
+}
+
+input{
+    width: 405px;
+}
+
+button{
+    width: 70px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10%;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+}
+
+
+
